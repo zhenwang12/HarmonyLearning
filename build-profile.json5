@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "00000018AE92E3C67D27A961C8553150791008B76F4459FA530C393CAB622FBEFF2C77FCA24FCBAD",
+          "certpath": "D:/Downloads/harmonyLearning.cer",
+          "keyAlias": "harmonykey",
+          "keyPassword": "000000180C497D041CBA5F14BC3EA8341851EDA0CA20004A263E82D8E8F2229F7F3BC47BB9C67801",
+          "profile": "D:/Downloads/XuexiDebug.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "D:/HarmonyProject/harmonykay.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
